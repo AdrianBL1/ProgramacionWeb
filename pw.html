@@ -11,7 +11,9 @@
     <link href="css/pw.css" rel="stylesheet">
 
     <!--Conexion con el archivo JavaScript-->
-    <script src="js/pw.js"></script>
+    <!--<script src="js/pw.js"></script>-->
+    <!--<script src="js/pw2.js"></script>-->
+    <script src="js/formulario.js"></script>
 </head>
 <body>
     <!--Cabecera de la página-->
@@ -40,6 +42,65 @@
     <article></article>
     <div></div>
     <!--Intercambiar datos con el usuario (Formularios)-->
-    <form action=""></form>
+    <!--
+    <form action="">
+        <textarea name="" id="opinion" cols="30" rows="10"></textarea>
+        <button>aceptar</button>
+        <input type="text" id="nombre">
+        <input type="button" value="Boton">
+        <input type="color" name="" id="">
+        <input type="date" name="" id="">
+        <input type="datetime" name="" id="">
+        <input type="checkbox" name="" id="mycheckbox1">
+        <label for="mycheckbox1">Etiqueta del checkbox 1</label>
+        <input type="checkbox" name="" id="mycheckbox2">
+        <label for="mycheckbox2">Etiqueta del checkbox 2</label>
+        <input type="file" name="" id="">
+        <input type="radio" name="radios" id="radios1">
+        <label for="radios1">Etiqueta de los radios</label>
+        <input type="radio" name="radios" id="radios2">
+        <label for="radios2">Etiqueta de los radios</label>
+        <input type="radio" name="radios" id="radios3">
+        <label for="radios3">Etiqueta de los radios</label>
+        <input type="hidden" name="">
+        <input type="password" name="" id="">
+        <input type="submit" value="Enviar" id="Enviar">
+    </form>
+    -->
+    <hr>
+    <form action="">
+        <p>Nombre</p>
+        <input type="text" id="nombre1">
+        <br>
+        <p>Apellidos</p>
+        <input type="text" id="apellido1">
+        <input type="text" id="apellido2">
+        <br>
+        <p>Fecha de Nacimiento</p>
+        <input type="date" name="" id="f_nacimiento">
+        <br>
+        <p>Departamento</p>
+        <select id="departamento" onchange="showOptions(this)">
+            <option value="" id="">Seleccione una opcion</option>
+            <option value="Sistemas" id="select1">Sistemas</option>
+            <option value="Industrial" id="select2">Nave Industrial</option>
+            <option value="Electronica" id="select3">Electronica</option>
+        </select>
+        <br>
+        <p>Genero</p>
+        <input type="radio" name="radios" id="radios1">
+        <label for="radios1">Femenino</label>
+        <input type="radio" name="radios" id="radios2">
+        <label for="radios2">Masculino</label>
+        <br>
+        <p>Enviar Datos</p>
+        <input type="submit" value="Enviar" id="Enviar">
+    </form>
+    <script type = "text/javascript">
+        function showOptions(s){
+         var valor = console.log(s[s.selectedIndex].value); // get value
+         var id = console.log(s[s.selectedIndex].id); // get id
+        }
+    </script>
 </body>
 </html>
