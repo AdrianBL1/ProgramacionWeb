@@ -8,7 +8,8 @@
     <title>Programación Web</title><!--Titulo de Pagina-->
 
     <!--Conexion con el archivo CSS-->
-    <link href="css/pw.css" rel="stylesheet">
+    <!-- <link href="css/pw.css" rel="stylesheet"> -->
+    <link href="css/pw2.css" rel="stylesheet">
 
     <!--Conexion con el archivo JavaScript-->
     <!--<script src="js/pw.js"></script>-->
@@ -30,7 +31,13 @@
         <a href="https://pinterest.com.mx" target="_blank">Pinterest</a>
     </nav>
     <!--Cuerpo principal de la pagina-->
-    <main></main>
+    <main>
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+        <article>4</article>
+        <article>5</article>
+    </main>
     <!--Información secundaria de la pagina-->
     <aside></aside>
     <!--Pie de pagina-->
@@ -80,7 +87,8 @@
         <input type="date" name="" id="f_nacimiento">
         <br>
         <p>Departamento</p>
-        <select id="departamento" onchange="showOptions(this)">
+        <!-- <select id="departamento" onchange="showOptions(this)"> -->
+        <select id="departamento">
             <option value="" id="">Seleccione una opcion</option>
             <option value="Sistemas" id="select1">Sistemas</option>
             <option value="Industrial" id="select2">Nave Industrial</option>
@@ -88,19 +96,44 @@
         </select>
         <br>
         <p>Genero</p>
-        <input type="radio" name="radios" id="radios1">
-        <label for="radios1">Femenino</label>
-        <input type="radio" name="radios" id="radios2">
-        <label for="radios2">Masculino</label>
+        <input type="radio" name="genero" id="femenino" value="Femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" name="genero" id="masculino" value="Masculino">
+        <label for="masculino">Masculino</label>
         <br>
         <p>Enviar Datos</p>
         <input type="submit" value="Enviar" id="Enviar">
+
+        <button id="crear">Crear Elemento</button>
+
+        <hr>
+        <br>
+        <p>Crear un Nuevo Elemento</p>
+        <select id="tipo_elemento">
+            <option value="text" id="select1">Text</option>
+            <option value="date" id="select2">Date</option>
+            <option value="button" id="select3">Button</option>
+            <option value="file" id="select4">File</option>
+        </select>
+        <p>¿Donde lo quieres?</p>
+        <select id="ubicacion_elemento">
+            <option value="header" id="select1">header</option>
+            <option value="nav" id="select2">nav</option>
+            <option value="main" id="select3">main</option>
+            <option value="aside" id="select4">aside</option>
+            <option value="footer" id="select4">footer</option>
+            <option value="section" id="select4">section</option>
+            <option value="article" id="select4">article</option>
+            <option value="div" id="select4">div</option>
+            <option value="form" id="select4">form</option>
+        </select>
+        <button id="crear2">Crear Elemento</button>
     </form>
-    <script type = "text/javascript">
+    <!-- <script type = "text/javascript">
         function showOptions(s){
          var valor = console.log(s[s.selectedIndex].value); // get value
          var id = console.log(s[s.selectedIndex].id); // get id
         }
-    </script>
+    </script> -->
 </body>
 </html>
